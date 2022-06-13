@@ -2,8 +2,7 @@ pwd
 
 ls
 
-# Begin with ' / ' is absolute path. Otherwise, relative path
-
+# Begin with ' / ' is absolute path. Otherwise, relative path.
 ls course.txt
 ls seasonal/summer.csv
 ls people
@@ -17,7 +16,7 @@ cp seasonal/spring.csv seasonal/summer.csv backup
 mv seasonal/spring.csv seasonal/summer.csv backup
 
 cd seasonal
-# 'mv' can also rename files
+# 'mv' can also rename files.
 mv winter.csv winter.csv.bck
 ls
 
@@ -28,7 +27,7 @@ rm seasonal/summer.csv
 
 rmdir 
 
-# 'rmdir' - remove directories, separate from 'rm'
+# 'rmdir' - remove directories, separate from 'rm'.
 rm people/agarwal.txt
 rmdir people
 mkdir yearly
