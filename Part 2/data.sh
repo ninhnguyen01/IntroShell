@@ -42,14 +42,14 @@ head summer.csv
 history
 !head 3
 
-# 'grep' - select lines according to what they contain
+# 'grep' - select lines according to what they contain.
 # common grep (below)
 # '-c' - print count of matching lines.
 # '-h' - do not print name of files. 
 # '-i' - ignore cases.
-# '-l' - print the name of files that contain matches
-# '-n' - print line numbers for matching lines
-# '-v' - invert the match
+# '-l' - print the name of files that contain matches.
+# '-n' - print line numbers for matching lines.
+# '-v' - invert the match.
 grep molar seasonal/autumn.csv
 grep -n -v molar seasonal/spring.csv
 grep -c incisor seasonal/autumn.csv seasonal/winter.csv
