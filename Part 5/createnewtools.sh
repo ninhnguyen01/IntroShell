@@ -43,7 +43,7 @@ cat teeth.out
 # pass filenames to scripts
 
 # $@ - "all of the command-line parameters given to the script".
-# # (example below)
+# (example below)
 # For example, if unique-lines.sh contains sort $@ | uniq, when you run:
 bash unique-lines.sh seasonal/summer.csv
 # the shell replaces $@ with seasonal/summer.csv and processes one file. If you run this:
