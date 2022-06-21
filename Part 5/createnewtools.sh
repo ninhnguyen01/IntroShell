@@ -16,16 +16,17 @@ grep -h -v Tooth seasonal/s* > temp.csv
 history | tail -n 3 | steps.txt 
 
 # save command
+
 # headers.sh
 # bash headers/sh
-# bash -> name for the shell program
+# bash -> name for the shell program.
 nano dates.sh
 cut -d , -f 1 seasonal/*.csv 
 bash dates.sh 
 
 # re-use pipes
-# shell script - a file full of shell commands.
 
+# shell script - a file full of shell commands.
 # (example below)
 # Scripts can also contain pipes. For example, if all-dates.sh contains this line:
 cut -d , -f 1 seasonal/*.csv | grep -v Date | sort | uniq
@@ -40,8 +41,8 @@ bash teeth.sh > teeth.out
 cat teeth.out
 
 # pass filenames to scripts
-# $@ - "all of the command-line parameters given to the script".
 
+# $@ - "all of the command-line parameters given to the script".
 # # (example below)
 # For example, if unique-lines.sh contains sort $@ | uniq, when you run:
 bash unique-lines.sh seasonal/summer.csv
@@ -65,6 +66,7 @@ wc -l $@ | grep -v total | sort -n -r | head -n 1
 bash range.sh seasonal/*.csv > range.out
 
 # loops in a shell script
+
 # (example below)
 # Print the first and last data records of each file.
 for filename in $@
